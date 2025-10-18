@@ -10,7 +10,7 @@ const cors = require("cors");
 app.use(cors());
 
 
-connectToMongoDb("mongodb://localhost:27017/urlShortener").then(() =>
+connectToMongoDb("mongodb+srv://stuntersingh81:stunter@stunter.zu3siu2.mongodb.net/urlShortener?retryWrites=true&w=majority&appName=stunter").then(() =>
   console.log("connected to database successfully")
 );
 
