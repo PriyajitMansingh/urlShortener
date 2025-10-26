@@ -14,7 +14,7 @@ export default function App() {
 
     try {
       // Send long URL to backend
-      const res = await axios.post("https://urlshortener-1687.onrender.com", { url });
+      const res = await axios.post("https://urlshortener-1687.onrender.com/url", { url });
 
       // Backend returns full shortUrl
       setShortUrl(res.data.shortUrl); // <-- fetch it directly

@@ -7,7 +7,11 @@ const app = express();
 const PORT = 8001;
 
 const cors = require("cors");
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://url-shortener.vercel.app",
+}));
+
 
 
 connectToMongoDb("mongodb+srv://stuntersingh81:stunter@stunter.zu3siu2.mongodb.net/urlShortener?retryWrites=true&w=majority&appName=stunter").then(() =>
