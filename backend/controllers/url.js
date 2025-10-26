@@ -24,7 +24,7 @@ async function handleGenerateShortUrl(req, res) {
     // Return the shortened URL
     return res.json({
       id: shortId,
-      shortUrl: `http://localhost:8001/${shortId}`,
+      shortUrl: `https://urlshortener-1687.onrender.com/${shortId}`,
     });
 
   } catch (err) {
