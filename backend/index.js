@@ -7,10 +7,10 @@ const app = express();
 const PORT = 8001;
 
 const cors = require("cors");
-// app.use(cors());
-app.use(cors({
-  origin: "https://url-shortener.vercel.app",
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: "https://url-shortener.vercel.app",
+// }));
 
 
 
